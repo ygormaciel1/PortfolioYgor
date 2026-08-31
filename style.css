@@ -1,0 +1,475 @@
+/*configs gerais*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f5f5;
+    color: #222;
+}
+
+
+/*cabecalho*/
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+}
+
+
+.lado-esquerdo {
+    width: 35%;
+    min-height: 100vh;
+    background-color: #ff6038;
+    position: relative;
+}
+
+
+/*nome*/
+
+.assinatura {
+    position: absolute;
+    top: 30px;
+    left: 40px;
+
+    font-family: cursive;
+    font-size: 28px;
+    font-weight: bold;
+
+    color: #222;
+}
+
+
+/*redes sociais*/
+
+.redes {
+    position: absolute;
+    bottom: 30px;
+    left: 35px;
+
+    display: flex;
+    gap: 15px;
+}
+
+.redes a {
+    width: 36px;
+    height: 36px;
+
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+
+    background-color: #222;
+    color: white;
+
+    font-size: 13px;
+    font-weight: bold;
+}
+
+
+.lado-direito {
+    width: 65%;
+    min-height: 100vh;
+
+    background-color: #202020;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+}
+
+
+/*menu*/
+
+.menu {
+    position: absolute;
+
+    top: 25px;
+    right: 40px;
+
+    font-size: 30px;
+
+    color: white;
+}
+
+/*foto*/
+
+.foto-container {
+    position: absolute;
+
+    left: -155px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    width: 310px;
+    height: 310px;
+}
+
+.foto {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+}
+
+
+/*apresentacao*/
+
+.apresentacao {
+    margin-left: 180px;
+    max-width: 450px;
+
+    color: white;
+}
+
+.profissao {
+    font-size: 16px;
+    color: #bcbcbc;
+
+    margin-bottom: 5px;
+}
+
+.apresentacao h1 {
+    font-size: 48px;
+
+    margin-bottom: 15px;
+}
+
+.descricao {
+    color: #bcbcbc;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+
+    margin-bottom: 25px;
+}
+
+
+.botoes {
+    display: flex;
+    gap: 18px;
+}
+
+.botao {
+    text-decoration: none;
+
+    padding: 13px 28px;
+
+    border-radius: 30px;
+
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.botao-outline {
+    color: #ff6038;
+
+    border: 2px solid #ff6038;
+
+    background-color: transparent;
+}
+
+.botao-principal {
+    background-color: #ff6038;
+
+    color: white;
+
+    border: 2px solid #ff6038;
+}
+
+
+/*secoes*/
+
+.secao {
+    padding: 90px 10%;
+}
+
+.conteudo {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.titulo-pequeno {
+    color: #ff6038;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 10px;
+}
+
+.secao h2 {
+    font-size: 34px;
+
+    margin-bottom: 25px;
+}
+
+.secao p {
+    line-height: 1.7;
+}
+
+
+/*sobre mim*/
+
+.sobre {
+    background-color: white;
+}
+
+
+/*conhecimentos*/
+
+.conhecimentos {
+    background-color: #f1f1f1;
+}
+
+.lista-conhecimentos {
+    list-style: none;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 15px;
+
+    margin-top: 25px;
+}
+
+.lista-conhecimentos li {
+    background-color: white;
+
+    padding: 18px 20px;
+
+    border-left: 4px solid #ff6038;
+
+    font-weight: bold;
+}
+
+
+/*projetos*/
+
+.projetos {
+    background-color: white;
+}
+
+.tabela-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    margin-top: 30px;
+
+    background-color: white;
+}
+
+th,
+td {
+    border: 1px solid #ccc;
+
+    padding: 15px;
+
+    text-align: left;
+}
+
+th {
+    background-color: #202020;
+
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f5f5f5;
+}
+
+
+/*contato*/
+
+.contato {
+    background-color: #202020;
+
+    color: white;
+
+    text-align: center;
+}
+
+.contato p {
+    color: #bcbcbc;
+}
+
+.links-contato {
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 15px;
+
+    margin-top: 30px;
+}
+
+.links-contato a {
+    text-decoration: none;
+
+    color: white;
+
+    border: 2px solid #ff6038;
+
+    padding: 12px 22px;
+
+    border-radius: 25px;
+}
+
+
+/*footer*/
+
+footer {
+    background-color: #151515;
+
+    color: #888;
+
+    text-align: center;
+
+    padding: 25px;
+
+    font-size: 14px;
+}
+
+
+/*detalhes*/
+
+@media (max-width: 900px) {
+
+    .hero {
+        min-height: auto;
+        display: block;
+    }
+
+    .lado-esquerdo {
+        width: 100%;
+        height: 180px;
+        min-height: 180px;
+    }
+
+    .lado-direito {
+        width: 100%;
+        min-height: 650px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .assinatura {
+        top: 25px;
+        left: 30px;
+    }
+
+    .redes {
+        bottom: 20px;
+        left: 30px;
+    }
+
+    .foto-container {
+        width: 230px;
+        height: 230px;
+
+        left: 50%;
+        top: -115px;
+
+        transform: translateX(-50%);
+    }
+
+    .apresentacao {
+        margin-left: 0;
+        margin-top: 100px;
+
+        padding: 30px;
+
+        text-align: center;
+    }
+
+    .apresentacao h1 {
+        font-size: 40px;
+    }
+
+    .botoes {
+        justify-content: center;
+    }
+
+    .menu {
+        top: 20px;
+        right: 25px;
+    }
+
+    .lista-conhecimentos {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/*cell*/
+
+@media (max-width: 500px) {
+
+    .lado-esquerdo {
+        height: 150px;
+        min-height: 150px;
+    }
+
+    .lado-direito {
+        min-height: 600px;
+    }
+
+    .foto-container {
+        width: 190px;
+        height: 190px;
+
+        top: -95px;
+    }
+
+    .apresentacao {
+        margin-top: 80px;
+        padding: 20px;
+    }
+
+    .apresentacao h1 {
+        font-size: 34px;
+    }
+
+    .descricao {
+        font-size: 13px;
+    }
+
+    .botoes {
+        flex-direction: column;
+    }
+
+    .botao {
+        width: 100%;
+        text-align: center;
+    }
+
+    .secao {
+        padding: 60px 7%;
+    }
+}
